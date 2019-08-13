@@ -4,11 +4,9 @@ namespace Shooting{
 	public class Map(){
 		string wall = "▣";
 		public static const int x = 20,y = 20; //size;
-		int[,] status = new int[y,x];
 		
 		public Map(){
-		
-		
+			showMap();
 		}
 		
 		public int setPoint(int x, int y){
@@ -20,11 +18,22 @@ namespace Shooting{
 		public int gety(){return y;}
 		
 		public void showMap(){
-			for(int i = 0 ; i< x;i++){
-				for(int j = 0 ; j < y;j++){
-					
-				}
+			//draw wall
+			for(int i = 0 ; i<= x;i++){
+				Graphic.printPoint(i,0,wall);
+				Graphic.printPoint(i,y,wall);
 			}
+			for(int i = 0; i < y;i++){
+				Graphic.printPoint(0,i,wall);
+				Graphic.printPoint(x,i,wall);
+			}
+		}
+		
+		public bool possiblePoint(int x, int y){
+			if(x>1 && x < Map.x-1 && y>1 && y < Map.y){
+				return true;
+			}				
+			else return true;
 		}
 	}
 }

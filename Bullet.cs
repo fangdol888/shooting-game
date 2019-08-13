@@ -10,13 +10,16 @@ namespace Shooting{
 		int nStay = nframe;//const frame size
 		
 		
-		public Bullet(int x, int y, int own){
+		public Bullet(int x=0, int y=0 int own=0){
 			this.x = x;
 			this.y = y;
 			this.own = own;
 		}
 		
-		public void shoot(){
+		public void shoot(int x ,int y ,int own){
+			this.x = x;
+			this.y = y;
+			this.own = own;
 			exist = true;
 		}
 		

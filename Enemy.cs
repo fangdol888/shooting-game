@@ -12,6 +12,17 @@ namespace Shooting{
 		public Enemy(int x, int y){
 			this.x = x;
 			this.y = y;
+			exist = true;
+		}
+		public newEnemy(int x, int y){
+			this.x = x;
+			this.y = y;
+			exist = true;
+		}
+		
+		public void dead(){
+			
+			exist=false;
 		}
 		
 		public void move(){

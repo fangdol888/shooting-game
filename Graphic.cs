@@ -5,6 +5,9 @@ namespace Shooting{
 		public Graphic(){
 			
 		}
+		public static void drawMovedObject(){
+			
+		}
 		public static void showStatus(ref Player pl){
 			
 		}
