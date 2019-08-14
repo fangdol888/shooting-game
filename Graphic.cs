@@ -1,10 +1,8 @@
 using System;
 
 namespace Shooting{
-	public static class Graphic(){
-		public Graphic(){
-			
-		}
+	public static class Graphic{
+		
 		public static void drawMovedObject(){
 			
 		}

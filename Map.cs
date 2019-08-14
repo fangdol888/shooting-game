@@ -1,17 +1,18 @@
 using System;
 
 namespace Shooting{
-	public class Map(){
+	public class Map{
 		string wall = "▣";
-		public static const int x = 20,y = 20; //size;
+		public static int x = 20,y = 20; //size;
 		
 		public Map(){
 			showMap();
 		}
 		
-		public int setPoint(int x, int y){
-			this.x = x; 
-			this.y = y;
+		public void setPoint(int x, int y){
+			Map.x = x; 
+			Map.y = y;
+			
 		}
 		
 		public int getx(){return x;}

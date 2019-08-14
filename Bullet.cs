@@ -1,19 +1,20 @@
 using System;
 
 namespace Shooting{
-	public class Bullet(){
+	public class Bullet{
 		string shape = "｜";
 		int x,y; //point;
 		int own;//owner 0:player 1:enemy
 		bool exist = false;
 		int nframe=15; //frame cycle
-		int nStay = nframe;//const frame size
+		int nStay;//const frame size
 		
 		
-		public Bullet(int x=0, int y=0 int own=0){
+		public Bullet(int x=0, int y=0, int own=0){
 			this.x = x;
 			this.y = y;
 			this.own = own;
+			nStay = nframe;
 		}
 		
 		public void shoot(int x ,int y ,int own){

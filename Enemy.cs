@@ -1,20 +1,21 @@
 using System;
 
 namespace Shooting{
-	public class Enemy(){
+	public class Enemy{
 		string shape = " ▼ ";
 		int x,y; //point;
 		int dir = 1 ; //0:left, 1: right;
 		int nframe= 60;
-		int nStay = nframe;
-		int exist = false;
+		int nStay;
+		bool exist = false;
 		
 		public Enemy(int x, int y){
 			this.x = x;
 			this.y = y;
 			exist = true;
+			nStay = nframe;
 		}
-		public newEnemy(int x, int y){
+		public void newEnemy(int x, int y){
 			this.x = x;
 			this.y = y;
 			exist = true;

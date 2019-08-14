@@ -1,7 +1,7 @@
 using System;
 
 namespace Shooting{
-	public class Player(){
+	public class Player{
 		string shape = " △ ";
 		int x,y; //point;
 		int life = 3;
