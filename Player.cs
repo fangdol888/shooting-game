@@ -24,9 +24,16 @@ namespace Shooting{
 			score += plus;
 		}
 		
+		public void dead(){
+			life--;
+			this.x = Map.x/2;
+			this.y = Map.y-1;
+		}
 		public int getx(){return x;}
 		public int gety(){return y;}
+		public int getScore(){return score;}
 		public string getShape(){return shape;}
+		
 	}
 }
 

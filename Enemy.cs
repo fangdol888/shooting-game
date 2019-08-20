@@ -22,7 +22,6 @@ namespace Shooting{
 		}
 		
 		public void dead(){
-			
 			exist=false;
 		}
 		
